@@ -1,0 +1,50 @@
+
+.Dv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Crd {
+    display: flex;
+    width: 400px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.Delete {
+    background: url("../components/Assets/DeleteIcon.svg");
+    border: none;
+    filter: invert(94%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(90%) contrast(75%);
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.Delete:hover {
+    filter: invert(23%) sepia(99%) saturate(5565%) hue-rotate(349deg) brightness(89%) contrast(120%);
+    transform: scale(1.2);
+}
+
+.Edit {
+    background: url("../components/Assets/EditIcon.svg");
+    border: none;
+    filter: invert(94%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(90%) contrast(75%);
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.Edit:hover {
+    filter: invert(23%) sepia(99%) saturate(5565%) hue-rotate(349deg) brightness(89%) contrast(120%);
+    transform: scale(1.2);
+}

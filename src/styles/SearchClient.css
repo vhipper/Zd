@@ -1,0 +1,12 @@
+
+.Glav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SearchInp {
+    margin-top: 10px;
+    width: 400px;
+    height: 40px;
+}
