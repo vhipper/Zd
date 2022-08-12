@@ -36,10 +36,6 @@ const ClientInfo = ({ id
         }
     };
 
-    const handleCancel = () => {
-        setIsModalVisible(false);
-    };
-
     return (
         <div className="Dv">
             <Card className="Crd">
@@ -55,7 +51,15 @@ const ClientInfo = ({ id
                 />
             </Card>
             <div>
-                    <Modal title="Изменить контакт" visible={isModalVisible} onOk={() => handleOk(id)} onCancel={handleCancel}>
+                    <Modal
+                        maskClosable={false}
+                        keyboard={false}
+                        closable={false}
+                        cancelButtonProps={{ style: { display: 'none' } }}
+                        title="Изменить контакт"
+                        visible={isModalVisible}
+                        onOk={() => handleOk(id)}
+                    >
                         <Form>
                             <p>Имя</p>
                             <Form.Item>
